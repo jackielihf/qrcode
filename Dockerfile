@@ -4,7 +4,7 @@ FROM docker.gf.com.cn/gf-tomcat:20150812
 MAINTAINER lihuafeng <lihuafeng@gf.com.cn>
  
 RUN mkdir -p /opt/qrcode
-ADD ./src/qrcode /opt/qrcode/
+ADD ./dist/qrcode /opt/qrcode/
 RUN cp /opt/qrcode -r /opt/tomcat/webapps
  
 # ssh
